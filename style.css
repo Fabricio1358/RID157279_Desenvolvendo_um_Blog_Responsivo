@@ -4,12 +4,12 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-/* Var */
-/* background-color: var(--cor_Verde); */
+/* Variáveis */
 :root {
     --cor_Verde: rgba(2, 162, 143, 1);
 }
 
+/* Main */
 body {
     background: #f6f6f6;
     min-height: 100vh;
@@ -36,6 +36,7 @@ html {
     flex-direction: column;
 }
 
+/* Header */
 .header {
     background-color: var(--cor_Verde);
     min-height: 5em;
@@ -58,6 +59,7 @@ html {
     padding: 0;
 }
 
+/* Main Container */
 .container_main {
     width: 100vw;
     max-width: none;
@@ -103,23 +105,24 @@ html {
     flex-direction: column;
     flex: 1;
     justify-content: flex-end;
-
-    p {
-        font-size: 1.7em;
-        color: white;
-    }
-
-    h2 {
-        font-size: 2.6em;
-        font-weight: 700;
-    }
-
-    h3 {
-        font-size: 1.7em;
-        font-weight: 600;
-    }
 }
 
+.v1_titulo_texto p {
+    font-size: 1.7em;
+    color: white;
+}
+
+.v1_titulo_texto h2 {
+    font-size: 2.6em;
+    font-weight: 700;
+}
+
+.v1_titulo_texto h3 {
+    font-size: 1.7em;
+    font-weight: 600;
+}
+
+/* Recent Cards */
 .recent-cards {
     margin-top: 1.5em;
     display: grid;
@@ -203,6 +206,7 @@ html {
     margin-top: 0.2em;
 }
 
+/* Popular Posts */
 .v2_titulo_verde {
     width: 100%;
     color: white;
@@ -286,6 +290,7 @@ html {
     font-weight: 400;
 }
 
+/* Categories */
 .v2_categorias {
     gap: 1.5em;
     display: flex;
@@ -313,12 +318,10 @@ html {
     align-items: center;
     color: #444;
     font-weight: 700;
-    /* cinza mais escuro para o texto principal */
 }
 
 .categorias-lista li span {
     color: #888;
-    /* mantém o número mais claro */
 }
 
 .categorias-lista ul {
@@ -339,7 +342,7 @@ html {
     box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.08);
 }
 
-/* Responsivo */
+/* Responsive Design */
 @media (max-width: 1200px) {
     .container_main {
         padding: 0 1em;
@@ -420,21 +423,19 @@ html {
         min-height: 9%;
     }
 
-    .v1_titulo_texto {
-        p {
-            font-size: 1.1em;
-            color: white;
-        }
+    .v1_titulo_texto p {
+        font-size: 1.1em;
+        color: white;
+    }
 
-        h2 {
-            font-size: 1.6em;
-            font-weight: 700;
-        }
+    .v1_titulo_texto h2 {
+        font-size: 1.6em;
+        font-weight: 700;
+    }
 
-        h3 {
-            font-size: 1.1em;
-            font-weight: 600;
-        }
+    .v1_titulo_texto h3 {
+        font-size: 1.1em;
+        font-weight: 600;
     }
 
     .v2_post_pop {
